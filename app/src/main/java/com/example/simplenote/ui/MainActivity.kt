@@ -44,10 +44,13 @@ class MainActivity : AppCompatActivity() {
                     e.printStackTrace()
                 }
 
-                //
+                //to prepare the interface for the next operation, clear the next operation,
+                // clear the text from edtFileName
+                //and edtNoteText.
                 binding.edtFileName.text.clear()
                 binding.edtNoteText.text.clear()
             } else {
+                // call function for utitlity.kt
                 showToast("Please provide a Filename")
             }
         }
